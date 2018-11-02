@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>标签</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+
+<body style="background-color:powderblue">
+<!--这是一超链接标签-->
+<a href="http://www.w3school.com.cn">这是一个超链接</a>
+<!--知识一个标题居中的标签-->
+<h2 align="center">this is a heading</h2>
+<h3 class="hello"> 大家好，My name is lilei</h3>
+<img src="i/eg_w3school.gif" width="10" height="30"/>
+<p>this is a paragraph</p>
+<!--这是一个创建水平线的标签-->
+<hr/>
+<!--注释：this is a comment-->
+<p>这是一个段落</p>
+<!--折行，在不进行创建新段落的情况先进行换行-->
+<p>to break<br/>linkes<br/> in a<br/> paragraph<br/>use the br tag.</p>
+<p>春眠不觉晓，<hr><br/>处处闻啼鸟。<br/>夜来风雨声，<br/>花落知多少。</p>
+<h1>look!styles and colors</h1>
+style--
+<!--提供了一种该表元素样式的发放：-->
+<p style="font-family:verdana;color:red">this texe is in verdana and red</p>
+<p style="font-family:times;color:green;">this is text in times and green.</p>
+<p style="font-size:30px;">this is 30px high</p>
+<!--改变背景颜色-->
+<h2 style="background-color:red">this is a heading</h2>
+<p style="background-color:green">this is a paragraph.</p>
+<!--设置文本对齐，上面的标题相对于页面居中对齐。-->
+<h2 style="text-align: center">this is a heading</h2>
+<p>this heading above is aligned to the center of this page.</p>
+<!--文本格式化-->
+<b>this text is bold</b>
+<br/>
+<strong>this text is strong</strong>
+<br/>
+<big>this text is big</big>
+<br/>
+<!--计算机输出标签,这些标签常用于显示计算机、编程代码-->
+<code>conputer code</code><!--定义计算机编码-->
+<br/>
+<kbd>keyboard input</kbd><!--定义键入-->
+<br/>
+<tt>teletype text</tt><!--定义打字机文本-->
+<br/>
+<samp>sample text</samp><!--定义示例文本-->
+<br/>
+<var>computer variable</var><!--定义计算机变量-->
+<br/>
+<!--地址标签-->
+<address>sdsdsdsd</address>
+
+<br/>
+<!--文字反向-->
+<bdo dir="rtl"> here is some hebrew texe</bdo>
+<br/>
+<!--块引用-->
+你是一只狗
+<blockquote>你是一只狗</blockquote><!--使用blockquote元素，浏览器会插入换行和外边距，而q元素不会有任何特殊效应-->
+<q>你是一只狗</q>
+<!--删除字效果和插入字效果-->
+<p>一个人有
+    <del>三只</del>
+    <ins>两只</ins>
+    眼睛。
+    <!--css格式-->
+    <!--外部样式表：当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。-->
+    <head>
+        <link rel="stylesheet" type="text/css" herf="myself.css">
+    </head>
+    <!--内部样式表--作用：当单个文件需要特别样式时，就可以使用内部样式表。你可以在 head 部分通过 <style> 标签定义内部样式表-->
+    <head>
+        <style type="text/css">
+            body {
+                background-color: red
+            }
+
+            p {
+                margin-left: 20px
+            }</style>
+    </head>
+    <!--内联样式--作用：当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。-->
+<p style="color: red; margin-left:20px">
+    this is a paragraph
+</p>
+<!--表格-->
+<!--每个表格由table标签开始，表格行由tr标签开始，表格数据由td开始-->
+<h4>一列</h4>
+<h4>这是一行三列的表格</h4>
+<table border="1"><!--border="1"表示边框线 的粗细位1px-->
+    <tr><!--一行三列-- tr 代表表格中的一行  td代表表格中的列 或者单元格-->
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <br/>
+</table>
+<h4>这是两行三列的表格</h4>
+<table border="1"><!--这是一个两行三列的表-->
+    <tr>
+        <!--添加表格的表头--表头使用<th >标签-->
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>住址</th>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>400</td>
+        <td>500</td>
+        <td>600</td>
+    </tr>
+</table>
+<table border="1"><!--这是一个两行三列的表-->
+    <tr>
+        <!--添加表格的表头--表头使用<th >标签-->
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>住址</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td><!--&nbsp表示和这个空的单元格添加的一个占位符，可以显示边框-->
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>400</td>
+        <td>500</td>
+        <td>600</td>
+    </tr>
+</table>
+<br/>
+<<h4>这是垂直表头</h4>
+<table border="2">
+    <caption>这是标题</caption><!--带有标题的表格-->
+    <tr>
+        <th>姓名</th>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <th>年龄</th>
+        <td>20</td>
+    </tr>
+    <tr>
+        <th>性别</th>
+        <td>男</td>
+    </tr>
+</table>
+<h4>横跨两列的单元格:</h4>
+<table border="2">
+    <tr>
+        <th>姓名</th>
+        <th colspan="2">年龄</th><!--colspan:跨列-->
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>20</td>
+        <td>20</td>
+    </tr>
+</table>
+<h4>这是横跨两行的单元格</h4>
+<table border="2">
+    <tr>
+        <th>姓名</th>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <th rowspan="2">年龄</th><!--rowspan：跨行-->
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>20</td>
+    </tr>
+</table>
+
+
+<h5>這是一個无序标签</h5>
+<ul><!--Unordered List（无序列表）的缩写-->
+    <li>香蕉</li>
+    <li>苹果</li>
+    <li>橘子</li>
+</ul>
+<h5>这是一个有序标签</h5>
+<ol start=><!--ol表示有序列表-->
+    <li>香蕉</li>
+    <li>橘子</li>
+    <li>苹果</li>
+</ol>
+<ol start="20">
+    <li>你</li>
+    <li>我</li>
+    <li>他</li>
+</ol>
+
+<!--div标签:可定义文档中的分区或节。内容自动地开始一个新行。实际上，换行是 <div> 固有的唯一格式表现-->
+<h2>this is a header</h2>
+<p>this is a paragraph</p>
+<div style="color: #00FF00;">
+    <h2>this is a header</h2>
+    <p>this is a paragraph</p>
+</div>
+
+<p>this is a paragraph</p>
+<div align="center" style="border:2px solid red">this is a header</div>
+<!--form元素-->
+<form action="">first name：<br>
+    <input type="text" name="first name"><!--input type="text"定义用于文本输入的单行输入字段-->
+    <br>
+    last name:<br>
+    <input type="text" name="last name">
+</form>
+
+
+
+</body>
+</table>
